@@ -9,7 +9,7 @@ import { Description } from './Description';
 const Stopwatch: React.FC = () => {
   const [time, setTime] = useState<number>(0);
   const [laps, setLaps] = useState<number[]>([]);
-  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
+  const [intervalId, setIntervalId] = useState<number | null>(null);
 
   const timeInputRef = useRef<HTMLInputElement>(null);
   const intervalInputRef = useRef<HTMLInputElement>(null);
@@ -25,7 +25,7 @@ const Stopwatch: React.FC = () => {
   const handleStart = () => {
     if (intervalId) return;
     const interval = Number(intervalInputRef.current?.value) || 1;
-    const id = setInterval(() => {
+    const id = window.setInterval(() => {
       setTime(prevTime => prevTime + interval);
     }, interval * 1000);
     setIntervalId(id);
