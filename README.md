@@ -44,3 +44,9 @@ Before setting up the project, ensure you have the following installed:
    ```
 
 4. Open [localhost:5173](http://localhost:5173/) on your browser
+
+## Running Tests
+
+```bash
+npm run test
+```
