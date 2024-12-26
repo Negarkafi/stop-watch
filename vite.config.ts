@@ -7,7 +7,10 @@ type ViteConfig = UserConfig & { test: InlineConfig };
 
 const config: ViteConfig = {
   plugins: [react()],
-  test: {},
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  },
 };
 
 export default defineConfig(config);
