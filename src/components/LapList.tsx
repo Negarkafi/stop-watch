@@ -1,4 +1,4 @@
-import { LapItem } from './LapItem';
+import { LapItem } from '@components/LapItem';
 
 interface Porps {
   laps: number[];

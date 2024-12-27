@@ -1,4 +1,4 @@
-import { cn } from '../lib/helper/cn';
+import { cn } from '@lib/helper/cn';
 
 interface Props {
   onClick?: () => unknown;

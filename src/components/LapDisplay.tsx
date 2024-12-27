@@ -1,5 +1,5 @@
-import { LapList } from './LapList';
-import { LapTitle } from './LapTitle';
+import { LapList } from '@components/LapList';
+import { LapTitle } from '@components/LapTitle';
 
 interface Props {
   laps: number[];

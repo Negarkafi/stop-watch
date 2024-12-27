@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { UncontrolledInput } from './UncontrolledInput';
-import { TimeDisplay } from './TimeDisplay';
-import { ActionButtons } from './ActionButtons';
-import { LapDisplay } from './LapDisplay';
-import { Title } from './Title';
-import { Description } from './Description';
+import { UncontrolledInput } from '@components/UncontrolledInput';
+import { TimeDisplay } from '@components/TimeDisplay';
+import { ActionButtons } from '@components/ActionButtons';
+import { LapDisplay } from '@components/LapDisplay';
+import { Title } from '@components/Title';
+import { Description } from '@components/Description';
 
 const Stopwatch: React.FC = () => {
   const [time, setTime] = useState<number>(0);

@@ -1,4 +1,4 @@
-import { formatTime } from '../lib/helper/formatTime';
+import { formatTime } from '@lib/helper/formatTime';
 
 interface Props {
   lap: number;
